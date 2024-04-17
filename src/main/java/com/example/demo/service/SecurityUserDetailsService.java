@@ -29,6 +29,15 @@ public class SecurityUserDetailsService implements UserDetailsService{
 		throw new UsernameNotFoundException("Error en usuario: "+username);
 	}
 	
+	/*
+	 	public void guardar(UsuarioModel usuarioModel){
+    BCryptPasswordEncoder passwordEncoder = new BCryptPasswordEncoder();
+    usuarioModel.setPassword(passwordEncoder.encode(usuarioModel.getPassword()));
+    usuarioRepository.save(usuarioModel);
+		}
+	
+	 */
+	
 	
 	
 }
