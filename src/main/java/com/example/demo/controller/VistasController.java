@@ -7,14 +7,34 @@ import org.springframework.web.bind.annotation.GetMapping;
 public class VistasController {
 
 	
-	@GetMapping("/index1")
+	@GetMapping("/p3")
 	public String prueba() {
+		return "otra";
+	}
+	
+	@GetMapping("/login")
+	public String logeando() {
+		return "login";
+	}
+	
+	@GetMapping("/index")
+	public String logeado() {
 		return "index";
 	}
 	
-	@GetMapping("/logeado")
-	public String logeado() {
-		return "index2";
+	@GetMapping("/admin")
+	public String perfilAdmin() {
+		return "admin";
+	}
+	
+	@GetMapping("/denegado")
+	public String accesoNoPermitido() {
+		return "404";
+	}
+	
+	@GetMapping("/register")
+	public String newUser() {
+		return "register";
 	}
 	
 }
